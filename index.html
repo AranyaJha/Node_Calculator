@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aranya's Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+	<script>
+            function Add(){
+                let x = Number(document.getElementById("num1").value);
+                let y = Number(document.getElementById("num2").value);
+                document.getElementById("res").value = x+y;
+            };
+            function Sub(){
+                let x = Number(document.getElementById("num1").value);
+                let y = Number(document.getElementById("num2").value);
+                document.getElementById("res").value = x-y;
+            };
+            function Mul(){
+                let x = Number(document.getElementById("num1").value);
+                let y = Number(document.getElementById("num2").value);
+                document.getElementById("res").value = x*y;
+            };
+            function Div(){
+                let x = Number(document.getElementById("num1").value);
+                let y = Number(document.getElementById("num2").value);
+                document.getElementById("res").value = x/y;
+            };
+        </script>
+</head>
+<body>
+	<h1 style="text-align: center;">MY PERSONAL CALCULATOR</h1>
+	<div class="input">
+		<h2 style="text-align: center;font-family:sans-serif; color: #403F4C"><u>INPUT</u></h2>
+		<form class="form">
+			<label id="one">1st Number: </label>
+			<input type="number" id="num1">
+			<label id="two">2nd Number: </label>
+			<input type="number" id="num2">
+			<br><br>
+			<label id="ans">Answer: </label>
+            <input type="text" id="res">
+            <br><br>
+            <button id="reset" type="reset">Reset</button>
+		</form>
+	</div>
+		<table cellspacing="30">
+			<tr>
+				<td><button type="button" id="add" class="myButton" onclick="Add()">Addition</button></td>
+				<td><button type="button" id="sub" class="myButton" onclick="Sub()">Substraction</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" id="mul" class="myButton" onclick="Mul()">Multiplication</button></td>
+				<td><button type="button" id="div" class="myButton" onclick="Div()">Division</button></td>
+			</tr>
+		</table>
+</body>
+</html>
